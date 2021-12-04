@@ -1,0 +1,7 @@
+{
+  "Vue 3 Docgen - Slot Section": {
+    "prefix": "/slot",
+    "body": "<!--\n\t@slot ${1:Name of slot, or `default` if no name}\n\t@binding ${2:Description of binding}\n-->",
+    "description": "Describes what can be inserted into the slot it documents.",
+  },
+}

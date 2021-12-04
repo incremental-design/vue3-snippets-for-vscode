@@ -1,0 +1,35 @@
+{
+  "name": "vue3-snippets",
+  "displayName": "Vue 3 Snippets",
+  "description": "Snippets for Vue 3 option API, composition API, and Docgen Tags",
+  "repository": "https://github.com/incremental-design/vue3-snippets-for-vscode",
+  "icon": ".readme/icon.png",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.62.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/snippets-html.code-snippets"
+      }
+    ]
+  },
+  "publisher": "designbyajay"
+}

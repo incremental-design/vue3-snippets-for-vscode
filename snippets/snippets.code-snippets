@@ -1,0 +1,252 @@
+{
+  "Vue 3 Options API -  All Options": {
+    "prefix": "options",
+    "body": "components: {},\n\n// extends: nameOfComponent, /* import a component, and then assign it here to extend it. Note that you can only extend ONE component. See https://v3.vuejs.org/api/options-composition.html#extends */\n\nmixins: [],\n\n// !Properties and Methods\n\nprops: {},\n\ninject: [], /* see https://v3.vuejs.org/guide/component-provide-inject.html#working-with-reactivity */\n\ndata() {\n\treturn {}${1: as TypeName /* see: https://v3.vuejs.org/guide/typescript-support.html#using-with-options-api */}\n}\n\nprovide() {\n\treturn {}\n}, /* see: https://v3.vuejs.org/guide/component-provide-inject.html#working-with-reactivity */\n\ncomputed: {},\n\nmethods: {},\n\nwatch: {},\n\nemits: {},\n\ndirectives: {},\n\n// !Lifecycle Hooks\n\nbeforeCreate() {},\n\ncreated() {},\n\nbeforeMount() {},\n\nmounted() {},\n\nbeforeUpdate() {},\n\nupdated() {},\n\nactivated() {},\n\ndeactivated() {},\n\nbeforeDestroy() {},\n\ndestroyed() {},\n\n",
+    "description": "Stubs out every option in the Vue 3 options API. Use it inside the `export default {...}` block of your Vue component's `<script>` tag, or inside the `export defineComponent({...})` function in your Vue component `<script lang=\"ts\">` tag."
+  },
+  "Vue 3 Options API -  Props": {
+    "prefix": "props:{}",
+    "body": "props: {${1:/* see: https://v3.vuejs.org/api/options-data.html#props */}\n\t${0:// prop: {\\}}\n},",
+    "description": "Stubs out an object that contains the definition of every prop in your component."
+  },
+  "Vue 3 Options API -  Components List": {
+    "prefix": "components:{}",
+    "body": "components: {${1:/* see: https://v3.vuejs.org/api/options-assets.html#components */}\n\t${0:// List of components that have been imported into this file}\n},",
+    "description": "Stubs out an object that contains a hash of components that you imported, and want to use in your component's template."
+  },
+  "Vue 3 Options API -  Inject": {
+    "prefix": "inject:[]",
+    "body": "inject:[],${0:\n/* see: https://v3.vuejs.org/guide/component-provide-inject.html#working-with-reactivity */}\n",
+    "description": "Holds a list of properties provided by ancestor components that you want to inject."
+  },
+  "Vue 3 Options API -  Data": {
+    "prefix": "data()",
+    "body": "data() {${1:/* see: https://v3.vuejs.org/api/options-data.html#data-2 */}\n\treturn {\n\t\t${0:// data}\n\t}${2: as TypeName /* see: https://v3.vuejs.org/guide/typescript-support.html#using-with-options-api */}\n},",
+    "description": "Holds the values you want to initialize your component with."
+  },
+  "Vue 3 Options API -  Provide": {
+    "prefix": "provide()",
+    "body": "provide() {${1:/* see: https://v3.vuejs.org/guide/component-provide-inject.html#working-with-reactivity */}\n\treturn{\n\t\t${0:// reactive properties to provide to all descendants}\n\t}\n},",
+    "description": "Holds a list of properties that you want to provide to descendent components."
+  },
+  "Vue 3 Options API -  Prop": {
+    "prefix": "prop:{}",
+    "body": "/**\n * ${1:prop name} ${2:description of prop}\n *\n * @values ${3:list of values that the prop accepts}\n *\n * @example\n * ```vue\n *\n * ${4:// example of setting prop on component}\n *\n * ```${5:\n * @ignore}\n */\n${1:prop name}: {${6:/* see https://v3.vuejs.org/api/options-data.html#props */}\n\ttype: ${7: /* Any Typescript Class or Constructor Function */},\n\tdefault: () => (${8:/* value to return */})\n\trequired: ${9:true},\n\tvalidator: (value:${10:any}):boolean => (${11:/* test that returns true or false */})\n},",
+    "description": "Stubs out an object that contains reactive properties that you want to receive from your component's parent."
+  },
+  "Vue 3 Options API -  Computed Properties": {
+    "prefix": "computed:{}",
+    "body": "computed: {${1:/* see: https://v3.vuejs.org/api/options-data.html#computed */}\n\t${0://compute:{\\}}\n},",
+    "description": "Stubs out an object that contains reactive computed properties."
+  },
+  "Vue 3 Options API -  Computed Property": {
+    "prefix": "compute:{}",
+    "body": "/**\n * ${1: computed property name} ${2:description of what the computed property does}\n */\n${1:computed property name}: {${3:/* see: https://v3.vuejs.org/api/options-data.html#computed */}\n\tget: (){\n\t\t${4:// function that returns the value of the computed property}\n\t},\n\tset(value:${5:any}){\n\t\t${6:// function that returns nothing}\n\t}\n}",
+    "description": "Stubs out an object that contains a single reactive computed property."
+  },
+  "Vue 3 Options API -  Methods": {
+    "prefix": "methods:{}",
+    "body": "methods: {${1:/* see: https://v3.vuejs.org/api/options-data.html#methods */}\n\t${0:// method()}\n},",
+    "description": "Stubs out an object that contains all of the methods you want your component to expose to its template."
+  },
+  "Vue 3 Options API -  Method": {
+    "prefix": "method()",
+    "body": "/**\n * ${1:method name} ${2:description of method}\n *\n * @param ${3:parameter name} ${4:description of parameter}\n *\n * @return ${5:description of what the method returns}\n *${6:\n * @event list of events this method `\\$emit`s}${7:\n * @remarks\n * Any explanation of implementation details or reasons you made this method\n *}${8:\n * @public}\n */\n${1:method name}(${9:arg}):${10:returnType}{\n\t${11:// method body}\n},",
+    "description": "Stubs out a single method."
+  },
+  "Vue 3 Options API -  Watchers": {
+    "prefix": "watchers:{}",
+    "body": "watch: {${1:/* see: https://v3.vuejs.org/api/options-data.html#watch */}\n\t${0:// watcher:{\\}}\n},",
+    "description": "Stubs out an object that contains all of the properties you want to watch for changes."
+  },
+  "Vue 3 Options API -  Watcher": {
+    "prefix": "watcher:{}",
+    "body": "${1:/**\n * @event list of events this wather `\\$emit`s\n */}\n${2:propertyName}: {${3:// see: https://v3.vuejs.org/api/options-data.html#watch}\n\thandler(value, oldValue){\n\t\t${4:// handler logic}\n\t},\n\tdeep:${5:false},\n\timmediate:${6:false}\n},",
+    "description": "Stubs out an object that contains the function you want to run when a property changes. "
+  },
+  "Vue 3 Options API -  Emits": {
+    "prefix": "emits:{}",
+    "body": "emits: {${1:/* see: https://v3.vuejs.org/api/options-data.html#emits */}\n\t${2:// emit:{\\}}\n},",
+    "description": "Stubs out an object that contains the custom events you want your component to emit."
+  },
+  "Vue 3 Options API -  Emit": {
+    "prefix": "emit:{}",
+    "body": "/**\n * ${1:customEventName} ${2:description of custom event}\n *\n * ${3:@param }${4:payload}${5: - Description of values payload takes and what it affects.}\n */\n${1:customEventName}: (${4:payload}${6::typeOfPayload}) => {${7:/* see: https://v3.vuejs.org/api/options-data.html#emits */}\n\t${8:// validation logic that returns true or false}\n},",
+    "description": "Stubs out an object that defines a custom event."
+  },
+  "Vue 3 Options API -  Render Function": {
+    "prefix": "render()",
+    "body": "render() {${1:/* see: https://v3.vuejs.org/api/options-dom.html#render */}\n\treturn h(\n\t\t${2:'div'}${3:/* HTML Tag name, component, async component or functional component */},\n\t\t${4:{\\}}${5:/* object with attributes, props and events */},\n\t\t${6:{\\}}${7:/* String, Array or Object that contains nested h(...) functions */},\n\t)\n},",
+    "description": "Stubs out a function that renders your component's template. This function replaces any template your component has."
+  },
+  "Vue 3 Options API -  Directives List": {
+    "prefix": "directives:()",
+    "body": "directives: {${1:/* see: https://v3.vuejs.org/api/options-assets.html#directives */}\n\t${2:// directive()}\n},",
+    "description": "Stubs out an object that contains all of the custom directives you want your component to have."
+  },
+  "Vue 3 Options API -  Directive": {
+    "prefix": "directive()",
+    "body": "${1:nameOfDirective}: {${2:/* see: https://v3.vuejs.org/guide/custom-directive.html#custom-directives */}\n\tcreated(element:Element, binding:any){\n\t\t${3:// do something to element in created hook}\n\t},\n\tbeforeMount(element:Element, binding:any){\n\t\t${4:// do something to element in beforeMount hook}\n\t},\n\tmounted(element:Element, binding:any){\n\t\t${5:// do something to element during mounted hook}\n\t},\n\tbeforeUpdate(element:Element, binding:any){\n\t\t${6:// do something to element during beforeUpdate hook}\n\t},\n\tupdated(element:Element, binding:any){\n\t\t${7:// do something to element during updated hook}\n\t},\n\tbeforeUnmount(element:Element, binding:any){\n\t\t${8:// do something to element during beforeUnmount hook}\n\t},\n\tunmounted(element:Element, binding:any){\n\t\t${9:// do something to element during unmounted hook}\n\t},\n},",
+    "description": "Stubs out a custom directive."
+  },
+  "Vue 3 Options API -  Lifecycle Hooks": {
+    "prefix": "lifecycleHooks",
+    "body": "// !Lifecycle Hooks\n${1:/* see: https://v3.vuejs.org/api/options-lifecycle-hooks.html */}\nbeforeCreate() {\n\t${2:/* do something before initializing this component's VNode */}\n},\n\ncreated() {\n\t${3:/* do something as soon as Vue initializes this component's VNode */}\n},\n\nbeforeMount() {\n\t${4:/* do something before Vue calls this component's render function */}\n},\n\nmounted() {\n\t${5:/* do something right after Vue calls this component's render function */}\n\t${6:// this.\\$nextTick( function(){\n\t//\t /* do something right after Vue renders this component's children */\n\t// \\})}\n},\n\nbeforeUpdate() {\n\t${7:/* do something before Vue re-renders this component */}\n},\n\nupdated() {\n\t${8:/* do something right after Vue re-renders this component */}\n},\n\nactivated() {\n\t${9:/* do something when this component has been kept alive and is activated. (see: https://v3.vuejs.org/api/options-lifecycle-hooks.html#activated ) */}\n},\n\ndeactivated() {\n\t${10:/* do something when this component has been kept alive and is deactivated */}\n},\n\nbeforeUnmount() {\n\t${11:/* do something before Vue destroys this component's DOM elements */}\n},\n\nunmounted() {\n\t${12:/* do something after Vue destroys this component's DOM elements */}\n},\n\nerrorCaptured() {\n\t${13:/* do something when this component errors. Optionally return 'true' or 'false'. (see: https://v3.vuejs.org/api/options-lifecycle-hooks.html#errorcaptured ) */}\n},\n\nrenderTracked() {\n\t${14:/* do something when this component's re-render is observed by something else. (see: https://v3.vuejs.org/api/options-lifecycle-hooks.html#rendertracked ) */}\n},\n\nrenderTriggered(event) {\n\t${15:/* do something when an event triggers this component to re-render. (see: https://v3.vuejs.org/api/options-lifecycle-hooks.html#rendertriggered ) */}\n},\n\n",
+    "description": "Stubs out all of your component's lifecycle hooks."
+  },
+  "Vue 3 Composition API - Setup Function": {
+    "prefix": "setup()",
+    "body": "components: {${1:/* see: https://v3.vuejs.org/api/options-assets.html#components */}\n\t${2:// List of components that have been imported into this single-file-component}\n},\n\nprops: {${3:// see: https://v3.vuejs.org/api/options-data.html#props}\n\t${4:// prop:{\\}}\n},\n\nemits: {${5:/* see: https://v3.vuejs.org/api/options-data.html#emits */}\n\t${6:// emit:{\\}}\n},\n\n${7:async }setup(props, {attrs, slots, emit}) {${8:/* If you use an async setup function, then you MUST include a `<suspense>` tag in your template. Otherwise, the setup function will never actually return. See: https://www.vuemastery.com/courses/vue-3-essentials/suspense */\n/* You can, alternatively, use defineAsyncComponent to make an async setup function. See: https://v3.vuejs.org/guide/migration/async-components.html */}${9:\n\t/* Use setup within defineComponent to get Typescript support */}${10:\n\n\t/* Import the following before you use the setup function: */}\n\t// import { defineComponent,${11: InjectionKey,}${12: provide,}${13: inject,} reactive,${14: computed,} toRefs,${15: watchEffect,}${16: watch,}${17: onBeforeMount,}${18: onMounted,}${19: onBeforeUpdate,}${20: onUpdated,}${21: onActivated,}${22: onDeactivated,}${23: onBeforeUnmount,}${24: onUnmounted,}${25: onErrorCaptured,}${26: onRenderTracked,}${27: onRenderTriggered} } from 'vue' \n\n\t// !Provide / Inject${28:\n\n\t/* See: https://v3.vuejs.org/api/composition-api.html#provide-inject\n\tSee: https://v3.vuejs.org/guide/composition-api-provide-inject.html#scenario-background */}${29:\n\n\t// const key =}${30:\n\n\t// provide()}${31:\n\n\t// const inject =}\n\n\t//!Subroutines${32:\n\n\t/* Use any valid Typescript to process the arguments of the setup function */}\n\n\t//!Data and Computed Properties${33:\n\n\t/* Populate the DataAndComputed object by calling the subroutines defined above */}\n\n\tconst DataAndComputed:any = reactive({\n\t\t/**\n\t\t * ${34:computedPropertyName}${35: - description of what the property does}\n\t\t */ \n\t\t// ${34: computedPropertyName}: computed()\n\t\\})\n\n\t// !Methods${36:\n\n\t/* Use any plain function to define a method. Make sure that you use `.value` when you access any of the reactive values in `DataAndComputed`. See: https://v3.vuejs.org/guide/reactivity-fundamentals.html#ref-unwrapping */\n\t/* You must add all methods to the return object if you want them to be available to your template. If you do not have a template, you must reference all methods within your render function. */}${37:\n\n\t// method()}\n\n\t// !Watchers${38:\n\n\t/* use `watchEffect` or `watch` to trigger functions whenever a property of `DataAndComputed` changes. Make sure you use `.value` to access the value of the `DataAndComputed` property you want to watch. See: https://www.vuemastery.com/courses/vue-3-essentials/watch */}${39:\n\n\t// watchEffect()}${40:\n\n\t// watch()}\n\n\t\// !Lifecycle Hooks${41:\n\n\t// onBeforeMount()}${42:\n\n\t// onMounted()}${43:\n\n\t// onBeforeUpdate()}${44:\n\n\t// onUpdated()}${45:\n\n\t// onActivated()}${46:\n\n\t// onDeactivated()}${47:\n\n\t// onBeforeUnmount()}${48:\n\n\t// onUnmounted()}${49:\n\n\t// onErrorCaptured()}${50:\n\n\t// onRenderTracked()}${51:\n\n\t// onRenderTriggered(event)}\n\n\t// !Return Value${52:\n\n\t/* You can either return an object or a render function. If your single-file component has a template, return an object. This object should contain all of the computed properties and methods you want to access from within the template. If your single-file component does not have a template, return a render function*/}\n\n\treturn {...toRefs(DataAndComputed)${53:,/* each method you want to access from within your template */}\\}\n},",
+    "description": "Stubs out a function that initializes your component with all of the data, computed properties, watchers, lifecycle hooks, provides and injects that you would otherwise define using the Options API."
+  },
+  "Vue 3 Composition API - InjectionKey Function": {
+    "prefix": "const key =",
+    "body": "const ${1:key}: InjectionKey<${2:string}> = Symbol()${3: /* notice that the key is an ES6 symbol, and the value can be anything of <type> (in this case, <string>) */}",
+    "description": "Stubs out a symbol which uniquely identifies an injected item."
+  },
+  "Vue 3 Composition API - Provide Function": {
+    "prefix": "provide()",
+    "body": "provide(${1:key}, ${2:'someValue'})${3: /* the 'key' argument must be an `InjectionKey`, and the 'someValue' argument must be a value of the `InjectionKey`'s <type>*/}",
+    "description": "Stubs out a function that makes a property available to every descendent of your component."
+  },
+  "Vue 3 Composition API - Inject Function": {
+    "prefix": "const inject =",
+    "body": "const inject = inject(${1:key})${2: /* the key must be an `InjectionKey`*/}",
+    "description": "Stubs out a statement which injects an item that an ancestor provides your component."
+  },
+  "Vue 3 Composition API - Computed Property Function": {
+    "prefix": "compute:()",
+    "body": "/**\n * ${1:computedPropertyName}${2: - description of what the property does}\n */\n${1:computedPropertyName}: computed({${3:/* // If you use this function outside of a `reactive()`, make sure you use `.value` to unwrap reactive references. */}${4:\n\t/* see: https://v3.vuejs.org/api/computed-watch-api.html#computed /*}\n\tget: ()${5:: any} => {\n\t\t${6:// function that returns the value of the computed property}\n\t\\},\n\tset: (value${7:: any}) => {\n\t\t${8:// function that returns nothing}\n\t\\}\n}),",
+    "description": "Stubs out a function that defines a reactive computed property."
+  },
+  "Vue 3 Composition API -  Method": {
+    "prefix": "method()",
+    "body": "/**\n * ${1:method name} ${2:description of method}\n *\n * @param ${3:parameter name} ${4:description of parameter}\n *\n * @return ${5:description of what the method returns}\n *${6:\n * @event list of events this method `\\$emit`s}${7:\n * @remarks\n * Any explanation of implementation details or reasons you made this method\n *}${8:\n * @public}\n */\nconst ${1:method name} = (${9:arg}):${10:returnType} => {${11:/* remember to add this method to the setup function's return object, so that you can access it from your component's template */}\n\t${12:// method body}\n},",
+    "description": "Stubs out a single method."
+  },
+  "Vue 3 Composition API - WatchEffect Function": {
+    "prefix": "watchEffect()",
+    "body": "watchEffect(() => {${1:/* make sure you unwrap reactive references with `.value`. See https://v3.vuejs.org/guide/reactivity-fundamentals.html#ref-unwrapping *}\n\t${2:// function you want to run immediately, and every time any reactive reference within it changes}\n\\})",
+    "description": "Stubs out a function that defines a callback that runs when a property changes."
+  },
+  "Vue 3 Composition API - Watch Function": {
+    "prefix": "watch()",
+    "body": "watch(\n\t[${1: reactive(s)}],${2: /* you can watch an entire array of reactive values */}\n\t(current, previous) => {${3: /* see: https://v3.vuejs.org/guide/reactivity-computed-watchers.html#watch */\n\t/* if you use a watcher to trigger an async function, make sure you invalidate side effects! See: https://v3.vuejs.org/guide/reactivity-computed-watchers.html#side-effect-invalidation */}\n\t\t${4:// code you want to run when reactives change}\n\t\\},\n\t{\n\t\tdeep: ${5:true},${6: /* see https://v3.vuejs.org/guide/reactivity-computed-watchers.html#watching-reactive-objects*/}\n\t\timmediate: ${7:false}${8: /*see: https://v3.vuejs.org/api/instance-methods.html#watch*/}\n\t}\n)",
+    "description": "Stubs out a function that defines a callback that runs when a property changes. Unlike `watchEffect()`, watch receives both the previous and current value of a property, so that you can conditionally run code based on the difference."
+  },
+  "Vue 3 Composition API - onBeforeMount Function": {
+    "prefix": "onBeforeMount()",
+    "body": "onBeforeMount(() => {\n\t${1:/* do something before Vue calls this component's render function */}\n})",
+    "description": "Stubs out a function that runs code before your component is mounted."
+  },
+  "Vue 3 Composition API - onMounted Function": {
+    "prefix": "onMounted()",
+    "body": "onMounted(() => {\n\t${1:/* do something right after Vue calls this component's render function */\n\t}${2:// this.\\$nextTick(function(){\n\t//\t /* do something right after Vue renders this component's children */\n\t// \\})}\n})",
+    "description": "Stubs out a function that runs code as soon as your component is mounted."
+  },
+  "Vue 3 Composition API - onBeforeUpdate Function": {
+    "prefix": "onBeforeUpdate()",
+    "body": "onBeforeUpdate(() => {\n\t${1:/* do something before Vue re-renders this component*/}\n})",
+    "description": "Stubs out a function that runs code before your component is patched with changes to the DOM."
+  },
+  "Vue 3 Composition API - onUpdated Function": {
+    "prefix": "onUpdated()",
+    "body": "onUpdated(() => {\n\t${1:/* do something right after Vue re-renders this component*/}\n})",
+    "description": "Stubs out a function that runs code as soon as your component is patched with changes to the DOM."
+  },
+  "Vue 3 Composition API - onActivated Function": {
+    "prefix": "onActivated()",
+    "body": "onActivated(() => {\n\t${1:/* do something when this component has been kept alive and is activated (see: https://v3.vuejs.org/api/options-lifecycle-hooks.html#activated ) */}\n})",
+    "description": "Stubs out a function that runs code when your kept-alive component is activated."
+  },
+  "Vue 3 Composition API - onDeactivated Function": {
+    "prefix": "onDeactivated()",
+    "body": "onDeactivated(() => {\n\t${1:/* do something when this component has been ketp alive and is deactivated */}\n})",
+    "description": "Stubs out a function that runs code before your kept-alive component is deactivated."
+  },
+  "Vue 3 Composition API - onBeforeUnmount Function": {
+    "prefix": "onBeforeUnmount()",
+    "body": "onBeforeUnmount(() => {\n\t${1:/* do something before Vue destroys this component's DOM elements */}\n})",
+    "description": "Stubs out a function that runs code before your component is unmounted."
+  },
+  "Vue 3 Composition API - onUnmounted Function": {
+    "prefix": "onUnmounted()",
+    "body": "onUnmounted(() => {\n\t${1:/* do something after Vue destroys this component's DOM elements*/}\n})",
+    "description": "Stubs out a function that runs code as soon as your component is unmounted."
+  },
+  "Vue 3 Composition API - onErrorCaptured Function": {
+    "prefix": "onErrorCaptured()",
+    "body": "onErrorCaptured(() => {\n\t${1:/* do something when this component errors. Optionally return 'true' or 'false'. (see: https://v3.vuejs.org/api/options-lifecycle-hooks.html#errorcaptured ) */}\n})",
+    "description": "Stubs out a function that runs code whenever an error occurs in your component."
+  },
+  "Vue 3 Composition API - onRenderTracked Function": {
+    "prefix": "onRenderTracked()",
+    "body": "onRenderTracked(() => {\n\t${1:/* do something when this component's re-render is observed by something else. (see: https://v3.vuejs.org/api/options-lifecycle-hooks.html#rendertracked ) */}\n})",
+    "description": "Stubs out a function that runs code as soon as your component is rendered."
+  },
+  "Vue 3 Composition API - onRenderTriggered Function": {
+    "prefix": "onRenderTriggered()",
+    "body": "onRenderTriggered(() => {\n\t${1:/* do something when an event triggers this component to re-render. (see: https://v3.vuejs.org/api/options-lifecycle-hooks.html#rendertriggered ) */}\n})",
+    "description": "Stubs out a function that runs code as soon as a change elsewhere in the Virtual DOM triggers a re-render of your component."
+  },
+  "Vue 3 Docgen - Component Section": {
+    "prefix": "/component",
+    "body": "/**\n * ${1:What is the component's single responsibility?}\n *${2:\n * @remarks\n * When should you use the component? What performance benefits or other magical powers does it confer upon you?\n * * When shouldn't you use the component?\n * * What states does this component furnish?\n * * What behaviors does this component furnish?\n * * Can you inject dependencies into this component, with props, slots or the inject option?\n * * Are there any situations where it makes sense to extend thsi component, rather than inject dependencies into it?\n * * How does the code in this component work?\n *}${3:\n * @example\n * ```vue\n * // example of how to use this component\n * ```}\n */",
+    "description": "Describes the purpose and behavior of the component. Place it directly above a component's `export default` statement."
+  },
+  "Vue 3 Docgen - Values Tag": {
+    "prefix": "@values",
+    "body": "\n* @values ${1: a list of values that a prop accepts}\n*",
+    "description": "Lists the values a prop can take."
+  },
+  "Vue 3 Docgen - Event Section": {
+    "prefix": "/event",
+    "body": "/**\n * Description of custom event${1:\n *\n * @param }${2:payload}${3: - Description of the values payload takes, and what it affects}\n */",
+    "description": "Lists the event(s) that the are `$emit(...)`ed by the method or watcher it documents."
+  },
+  "Vue 3 Docgen - Example Tag": {
+    "prefix": "@example",
+    "body": "\n* @example\n* ```vue\n*\n* // example of how to use this component\n*\n* ```\n*",
+    "description": "Shows an example of how to use the code it documents."
+  },
+  "Vue 3 Docgen - Deprecated Tag": {
+    "prefix": "@deprecated",
+    "body": "\n* @deprecated Use @link ${1:API item} instead.\n*",
+    "description": "Deprecates the code it documents, and links to the replacement code."
+  },
+  "Vue 3 Docgen - See Tag": {
+    "prefix": "@see",
+    "body": "\n* @see @link ${1:URL or API item}\n*",
+    "description": "Links to another section of the documentation, or to a website."
+  },
+  "Vue 3 Docgen - Link Tag": {
+    "prefix": "@link",
+    "body": "@link ${1:URL or API item}",
+    "description": "Links to another section of the documentation, or to a website."
+  },
+  "Vue 3 Docgen - Author Tag": {
+    "prefix": "@author",
+    "body": "\n* @author ${1:Your Name} ${2:<your email>}\n*",
+    "description": "List the name and author of the person who wrote the code."
+  },
+  "Vue 3 Docgen - Since Tag": {
+    "prefix": "@since",
+    "body": "\n* @since ${1:version number}\n*",
+    "description": "Lists the version that the code it documents first appeared in the codebase."
+  },
+  "Vue 3 Docgen - Version Tag": {
+    "prefix": "@version",
+    "body": "\n* @version ${1:version number}\n*",
+    "description": "Lists the version that the code it documents first appeared in the codebase."
+  },
+  "Vue 3 Docgen - Ignore Tag": {
+    "prefix": "@ignore",
+    "body": "\n* @ignore${1: don't document this prop component}\n*",
+    "description": "Excludes the documentation from autogenerated documentation sites."
+  },
+  "Vue 3 Docgen - Param Tag": {
+    "prefix": "@param",
+    "body": "\n* @param ${1:name}${2: - Description of values argument takes and what it affects}\n*",
+    "description": "Describes the values that the method it documents accepts for an argument."
+  },
+}
