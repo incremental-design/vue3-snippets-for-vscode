@@ -40,12 +40,12 @@
     "description": "Stubs out an object that contains reactive computed properties."
   },
   "Vue 3 Options API - Computed Property": {
-    "prefix": "compute:{}",
+    "prefix": "computed property - options",
     "body": "/**\n * ${1: computedPropertyName}${2: - }${3:description of what the computed property does}\n */\n${1:computedPropertyName}(){\n\treturn ${4:/* value of computed property */}\n}",
     "description": "Stubs out a function that computes a property."
   },
   "Vue 3 Options API -  Computed Property with Getter and Setter": {
-    "prefix": "compute:{}",
+    "prefix": "computed property with getter and setter - options",
     "body": "/**\n * ${1: computedPropertyName}${2: - }${3:description of what the computed property does}\n */\n${1:computedPropertyName}: {${4:/* see: https://v3.vuejs.org/api/options-data.html#computed */}\n\tget: (){\n\t\t${5:// function that returns the value of the computed property}\n\t},\n\tset(value:${6:any}){\n\t\t${7:// function that returns nothing}\n\t}\n}",
     "description": "Stubs out an object that contains the getter and setter for a writeable computed property."
   },
@@ -136,12 +136,12 @@
   },
   "Vue 3 Composition API - WatchEffect Function": {
     "prefix": "watchEffect()",
-    "body": "watchEffect(() => {${1:/* make sure you unwrap reactive references with `.value`. See https://v3.vuejs.org/guide/reactivity-fundamentals.html#ref-unwrapping *}\n\t${2:// function you want to run immediately, and every time any reactive reference within it changes}\n\\})",
+    "body": "${1:const }${2:stopWatchEffect}${3: /* this is a callback that dismantles the watchEffect function. See https://v3.vuejs.org/guide/reactivity-computed-watchers.html#stopping-the-watcher */\n}${4:= }watchEffect(() => {${5:/* make sure you unwrap reactive references with `.value`. See https://v3.vuejs.org/guide/reactivity-fundamentals.html#ref-unwrapping *}\n\t${6:// function you want to run immediately, and every time any reactive reference within it changes}\n\\})",
     "description": "Stubs out a function that defines a callback that runs when a property changes."
   },
   "Vue 3 Composition API - Watch Function": {
     "prefix": "watch()",
-    "body": "watch(\n\t[${1: reactive(s)}],${2: /* you can watch an entire array of reactive values */}\n\t(current, previous) => {${3: /* see: https://v3.vuejs.org/guide/reactivity-computed-watchers.html#watch */\n\t/* if you use a watcher to trigger an async function, make sure you invalidate side effects! See: https://v3.vuejs.org/guide/reactivity-computed-watchers.html#side-effect-invalidation */}\n\t\t${4:// code you want to run when reactives change}\n\t\\},\n\t{\n\t\tdeep: ${5:true},${6: /* see https://v3.vuejs.org/guide/reactivity-computed-watchers.html#watching-reactive-objects*/}\n\t\timmediate: ${7:false}${8: /*see: https://v3.vuejs.org/api/instance-methods.html#watch*/}\n\t}\n)",
+    "body": "${1:const }${2:stopWatch}${3: /* this is a callbaack that dismantles the watch function. see: https://v3.vuejs.org/guide/reactivity-computed-watchers.html#shared-behavior-with-watcheffect */\n}${4:= }watch(\n\t[${5:/* reactive(s) */}],${6: /* you can watch an entire array of reactive values */}\n\t(current, previous) => {${7: /* see: https://v3.vuejs.org/guide/reactivity-computed-watchers.html#watch */\n\t/* if you use a watcher to trigger an async function, make sure you invalidate side effects! See: https://v3.vuejs.org/guide/reactivity-computed-watchers.html#side-effect-invalidation */}\n\t\t${8:// code you want to run when reactives change}\n\t\\},\n\t{\n\t\tdeep: ${9:true},${10: /* see https://v3.vuejs.org/guide/reactivity-computed-watchers.html#watching-reactive-objects*/}\n\t\timmediate: ${11:false}${12: /*see: https://v3.vuejs.org/api/instance-methods.html#watch*/}\n\t}\n)",
     "description": "Stubs out a function that defines a callback that runs when a property changes. Unlike `watchEffect()`, watch receives both the previous and current value of a property, so that you can conditionally run code based on the difference."
   },
   "Vue 3 Composition API - onBeforeMount Function": {
