@@ -131,7 +131,7 @@
   },
   "Vue 3 Composition API -  Method": {
     "prefix": "method()",
-    "body": "/**\n * ${1:method name} ${2:description of method}\n *\n * @param ${3:parameter name} ${4:description of parameter}\n *\n * @return ${5:description of what the method returns}\n *${6:\n * @event list of events this method `\\$emit`s}${7:\n * @remarks\n * Any explanation of implementation details or reasons you made this method\n *}${8:\n * @public}\n */\nconst ${1:method name} = (${9:arg}):${10:returnType} => {${11:/* remember to add this method to the setup function's return object, so that you can access it from your component's template */}\n\t${12:// method body}\n},",
+    "body": "/**\n * ${1:method name} ${2:description of method}\n *\n * @param ${3:parameter name} ${4:description of parameter}\n *\n * @return ${5:description of what the method returns}\n *${6:\n * @event list of events this method `\\$emit`s}${7:\n * @remarks\n * Any explanation of implementation details or reasons you made this method\n *}${8:\n * @public}\n */\nconst ${1:method name} = (${9:arg}):${10:returnType} => {${11:/* remember to add this method to the setup function's return object, so that you can access it from your component's template */}\n\t${12:// method body}\n};",
     "description": "Stubs out a single method."
   },
   "Vue 3 Composition API - WatchEffect Function": {

@@ -27,3 +27,7 @@ Update completion for `prop {}`
 ## 0.1.5
 
 Update completion for lifecycle hooks
+
+## 0.1.6
+
+Fix typo in `method` snippet of vue3 composition api
