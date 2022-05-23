@@ -31,3 +31,7 @@ Update completion for lifecycle hooks
 ## 0.1.6
 
 Fix typo in `method` snippet of vue3 composition api
+
+## 0.1.7
+
+Remove `injectionKey` function, update provide/inject in `setup()` function
