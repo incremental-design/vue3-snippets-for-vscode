@@ -146,7 +146,7 @@
   },
   "Vue 3 Composition API - onMounted Function": {
     "prefix": "onMounted()",
-    "body": "onMounted(() => {\n\t${1:/* do something right after Vue calls this component's render function */\n\t}${2:// this.\\$nextTick(function(){\n\t//\t /* do something right after Vue renders this component's children */\n\t// \\})}\n})",
+    "body": "onMounted(() => {\n\t${1:/* do something right after Vue calls this component's render function */\n\t}${2:// nextTick(function(){\n\t//\t /* do something right after Vue renders this component's children */\n\t// \\})}\n})",
     "description": "Stubs out a function that runs code as soon as your component is mounted."
   },
   "Vue 3 Composition API - onBeforeUpdate Function": {

@@ -39,3 +39,7 @@ Update provide/inject in setup function
 ## 0.1.8
 
 Fix typo in lifecycle hooks of setup function
+
+## 0.1.9
+
+Update `nextTick` in setup function
