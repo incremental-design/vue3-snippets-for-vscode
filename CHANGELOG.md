@@ -31,3 +31,11 @@ Update completion for lifecycle hooks
 ## 0.1.6
 
 Fix typo in `method` snippet of vue3 composition api
+
+## 0.1.7
+
+Update provide/inject in setup function
+
+## 0.1.8
+
+Fix typo in lifecycle hooks of setup function
