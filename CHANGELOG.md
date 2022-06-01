@@ -43,3 +43,7 @@ Fix typo in lifecycle hooks of setup function
 ## 0.1.9
 
 Update `nextTick` in setup function
+
+## 0.1.10
+
+remove duplicate `provide` function in setup function. Format imports in setup function.
