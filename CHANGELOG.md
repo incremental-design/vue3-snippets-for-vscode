@@ -34,4 +34,16 @@ Fix typo in `method` snippet of vue3 composition api
 
 ## 0.1.7
 
-Remove `injectionKey` function, update provide/inject in `setup()` function
+Update provide/inject in setup function
+
+## 0.1.8
+
+Fix typo in lifecycle hooks of setup function
+
+## 0.1.9
+
+Update `nextTick` in setup function
+
+## 0.1.10
+
+remove duplicate `provide` function in setup function. Format imports in setup function.
