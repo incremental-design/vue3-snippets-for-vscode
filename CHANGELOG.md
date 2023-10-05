@@ -51,3 +51,7 @@ remove duplicate `provide` function in setup function. Format imports in setup f
 ## 0.1.11
 
 Add `async setup` function.
+
+## 0.1.12
+
+change `computed property`and `computed property with getter and setter` for composition API
