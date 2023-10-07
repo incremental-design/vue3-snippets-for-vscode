@@ -55,3 +55,8 @@ Add `async setup` function.
 ## 0.1.12
 
 change `computed property`and `computed property with getter and setter` for composition API
+
+# 1.0.0
+
+- remove options API snippets
+- update all snippets to use `<script setup lang="ts">`
