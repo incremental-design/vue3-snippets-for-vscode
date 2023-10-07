@@ -2,13 +2,7 @@
 
 If you want to write Vue code in VScode, you've probably already installed [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). If you haven't, what are you waiting for? It's essential for Vue development! If you have, you've probably noticed that it provides several snippets for scaffolding Vue files, but it doesn't provide snippets for the _contents_ of those files. That's what these snippets are for. Add them to your editor, and they will help you organize and document your Vue components. Use it alongside Vetur for the best Vue development experience.
 
-- **Stub Vue Single-File Components' options, with the `options` snippet**
-
-  ![`options` snippet](.readme/1-all-options.gif)
-
-  If you've been writing Vue [single-file components](https://v3.vuejs.org/guide/single-file-component.html#single-file-components) for a while, you've probably noticed that they get _really_ complicated, _really_ fast. That's because a single-file-component has over 25 different **options**. "What's an option", you ask? Well, if you look closely, every Vue component accepts a configuration object. Each property in this object is an "option". Together, these entries are known as the [Options API](https://v3.vuejs.org/api/options-api.html). Whenever you set an option, you're actually teaching Vue how it should use your component.
-
-- **Stub Vue Single-File Components' setup function, with the `setup()` snippet**
+- **Stub Vue Single-File Components' setup function, with the `setup` snippet**
 
   ![`setup()` snippet](.readme/20-setup.gif)
 

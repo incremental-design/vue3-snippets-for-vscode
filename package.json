@@ -4,7 +4,7 @@
   "description": "Snippets for Vue 3 option API, composition API, and Docgen Tags",
   "repository": "https://github.com/incremental-design/vue3-snippets-for-vscode",
   "icon": ".readme/icon.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.62.0"
   },

@@ -56,7 +56,11 @@ Add `async setup` function.
 
 change `computed property`and `computed property with getter and setter` for composition API
 
-# 1.0.0
+## 1.0.0
 
 - remove options API snippets
 - update all snippets to use `<script setup lang="ts">`
+
+## 1.0.1
+
+- fix type checking errors in vue 3.3
